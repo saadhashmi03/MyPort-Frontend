@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Gabarito', sans-serif;
+}
+body {
+  background: #0E0E0E;
+  color: #FFFFFF; /* White text color for contrast */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-card {
+  background-color: rgba(128, 128, 128, 0.173);
+}
+
+/* .gradient-text {
+  background: linear-gradient(white, rgba(134, 78, 173));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.gradient-text {
+  /* background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+  background-color: #F89E1B;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-text {
+color: #F89E1B;
+font-size: 1.5rem;
+
+
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  overflow: hidden;
+  background:gray ;
+  
+  
+}
+.progress-bar-inner {
+  background-color: #F89E1B;
+  height: 100%;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+
+.gradient-bg {
+  background: linear-gradient( black);
+}
+
+.progress-bar::-webkit-progress-bar {
+  border-radius: 15px;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.progress-bar::-webkit-progress-value {
+  border-radius: 15px;
+  background: linear-gradient(to right, violet, yellow);
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: rgba(134, 78, 173);
+  border-radius: 20px;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+/* animation for css */
+
+.project-item {
+  transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-image {
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/* animation for contact  */
+.input-field {
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+  
+}
+
+.input-field:hover,
+.input-field:focus {
+  border-color: #F89E1B; /* Example border color on hover or focus */
+}
+
+
+.submit-button {
+  background-color:#F89E1B ;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: gray ; /* Example color on hover */
+  
+  transform: scale(1.05); /* Example scale on hover */
+}
+
+
+.map-container {
+  transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.05); /* Example zoom in effect on hover */
+}
+
+/* typing css  */
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 36px;
+}
+.typing-effect span {
+  display: inline-block;
+  animation: typingAnimation 3s steps(20, end) infinite;
+}
+@keyframes typingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+/* // hero section for animation  */
+
+.image-container {
+  position: relative;
+  width: 200px; /* Set a specific width */
+  height: 200px; /* Set a specific height */
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .image-container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+.reveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.reveal-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 50%;
+}
+
+
+
+
+/* skill section for animation  */
+
+
+
+
+
+
+
+
+
+
