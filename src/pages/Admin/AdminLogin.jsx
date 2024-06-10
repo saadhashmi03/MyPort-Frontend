@@ -14,7 +14,7 @@ const AdminLogin = () => {
 
   const loginUser = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:5000/api/login", {
+    const res = await axios.post("https://myportapi.onrender.com/api/login", {
       email,
       password,
     });
@@ -28,7 +28,7 @@ const AdminLogin = () => {
 
 
   const checkUser = async()=>{
-    const res = await  axios.get("http://localhost:5000/api/checkUser",{
+    const res = await  axios.get("https://myportapi.onrender.com/api/checkUser",{
       withCredentials:true,
     });
     const data = await res.data;

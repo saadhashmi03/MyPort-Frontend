@@ -11,7 +11,7 @@ const AllSkills = () => {
   useEffect(() => {
     const getSkills = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/getSkill");
+        const res = await axios.get("https://myportapi.onrender.com/api/getSkill");
         const data = res.data.skills;
         dispatch(setSkills(data));
         console.log(data);
@@ -28,7 +28,7 @@ const AllSkills = () => {
       return;
     }
     try {
-      const res = await axios.delete(`http://localhost:5000/api/removeSkill/${id}`);
+      const res = await axios.delete(`https://myportapi.onrender.com/api/removeSkill/${id}`);
       const data = res.data;
       alert(data.msg);
       if (res.data.success) {

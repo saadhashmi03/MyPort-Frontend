@@ -11,7 +11,7 @@ const ProjectSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/getProjects');
+        const res = await axios.get('https://myportapi.onrender.com/api/getProjects');
         const data = res.data.project;
         dispatch(setProjects(data));
       } catch (error) {

@@ -21,7 +21,7 @@ const AllProjects = () => {
   const projects = useSelector((state) => state.user.projects);
 
   const getProject = async () => {
-    const res = await axios.get("http://localhost:5000/api/getProjects");
+    const res = await axios.get("https://myportapi.onrender.com/api/getProjects");
 
     const data = await res.data.project;
     dispatch(setProjects(data));
@@ -48,7 +48,7 @@ const AllProjects = () => {
     // Delete project from database
 
     const delProj = await axios.delete(
-      `http://localhost:5000/api/removeProject/${id}`
+      `https://myportapi.onrender.com/api/removeProject/${id}`
     );
     const data = await delProj.data;
     alert(data.msg);
@@ -81,7 +81,7 @@ const AllProjects = () => {
     };
 
     const res = await axios.put(
-      `http://localhost:5000/api/updateProject/${id}`,
+      `https://myportapi.onrender.com/api/updateProject/${id}`,
       myData
     );
 

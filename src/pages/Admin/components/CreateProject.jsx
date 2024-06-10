@@ -26,7 +26,7 @@ const CreateProject = () => {
       if (!uploadedImg) {
         return console.log("image not uploaded");
       }
-      const res = await axios.post("http://localhost:5000/api/addProject", {
+      const res = await axios.post("https://myportapi.onrender.com/api/addProject", {
         name,
         desc,
         githubUrl,

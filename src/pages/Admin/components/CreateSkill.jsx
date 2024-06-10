@@ -30,7 +30,7 @@ const CreateSkill = () => {
         // if (!uploadedImg) {
         //   return console.log("image not uploaded");
         // }
-        const res = await axios.post('http://localhost:5000/api/addSkill',{
+        const res = await axios.post('https://myportapi.onrender.com/api/addSkill',{
           skill,
           level,
           // secureUrl: uploadedImg.secureUrl,

@@ -14,7 +14,7 @@ const SkillsSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/getSkill');
+        const res = await axios.get('https://myportapi.onrender.com/api/getSkill');
         const data = res.data.skills;
         dispatch(setSkills(data));
       } catch (error) {

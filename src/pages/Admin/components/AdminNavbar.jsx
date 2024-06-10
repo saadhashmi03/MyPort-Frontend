@@ -16,7 +16,7 @@ const AdminNavbar = () => {
 
  const logoutUser= async()=>{
 
-    const res = await axios.get('http://localhost:5000/api/logout',{
+    const res = await axios.get('https://myportapi.onrender.com/api/logout',{
       withCredentials:true,
     });
     if(res.data.success) dispatch(logout())
