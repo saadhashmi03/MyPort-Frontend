@@ -14,8 +14,8 @@ export const uploadImage = async (selectImg) => {
     }
   );
   const data = await res.json();
-  if (!data) {
-    return console.log("Error occured while uploading image ");
+  if (!data.secure_url) {
+    return console.log("Error occurred while uploading image ");
   }
   const imageData = {
     secureUrl: data.secure_url,

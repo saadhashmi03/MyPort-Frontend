@@ -32,7 +32,7 @@ const CreateProject = () => {
         githubUrl,
         hostedUrl,
         secureUrl: uploadedImg.secureUrl,
-        publicId:uploadedImg.publicId,
+        public_id: uploadedImg.publicId, // Changed publicId to public_id
         deleteToken: uploadedImg.deleteToken,
       });
       alert(res.data.msg);
